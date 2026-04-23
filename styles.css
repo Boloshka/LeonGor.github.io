@@ -18,9 +18,14 @@ body {
   min-height: 100%;
 }
 
+body {
+  min-height: 100%;
+}
+
 html {
   background-color: var(--bg);
   background-image: url("assets/background_color.png"), url("assets/backround_color.png");
+  background-image: url("/assets/backround_color.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
