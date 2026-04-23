@@ -16,7 +16,11 @@
 body {
   margin: 0;
   font-family: var(--sans);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: url("assets/backround_color.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.65;
 }
