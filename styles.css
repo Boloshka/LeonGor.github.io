@@ -18,22 +18,17 @@ body {
   min-height: 100%;
 }
 
-body,
-body.home-page {
+body {
   margin: 0;
   font-family: var(--sans);
-  background-color: var(--bg);
-  color: var(--text);
-  line-height: 1.65;
-}
-
-body.home-page {
   background-color: var(--bg);
   background-image: url("assets/backround_color.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  color: var(--text);
+  line-height: 1.65;
   position: relative;
 }
 
@@ -213,7 +208,7 @@ h2 {
   border: 1px solid var(--border);
   border-radius: 0;
   padding: 1.5rem;
-  background: #fdfdfc;
+  background: rgba(253, 253, 252, 0.86);
 }
 
 .card h3 {
@@ -272,6 +267,10 @@ h2 {
 
 .cv-section {
   padding-top: 1.5rem;
+  padding-inline: 1rem;
+  background: rgba(253, 253, 252, 0.86);
+  border: 1px solid var(--border);
+  border-radius: 10px;
 }
 
 .cv-embed {
@@ -279,12 +278,19 @@ h2 {
   height: min(82vh, 1200px);
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: #fff;
+  background: rgba(253, 253, 252, 0.86);
 }
 
 .project-content {
   display: grid;
   gap: 1.2rem;
+}
+
+.project-page .section {
+  background: rgba(253, 253, 252, 0.86);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding-inline: 1rem;
 }
 
 .project-content section {
