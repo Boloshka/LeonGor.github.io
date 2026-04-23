@@ -23,23 +23,18 @@ body.home-page {
   margin: 0;
   font-family: var(--sans);
   background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+body.home-page {
+  background-color: var(--bg);
   background-image: url("assets/backround_color.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: var(--text);
-  line-height: 1.65;
   position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.2);
-  pointer-events: none;
-  z-index: -1;
 }
 
 .site-header {
@@ -84,6 +79,19 @@ main {
   overflow: hidden;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  background-image: url("assets/backround_color.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(252, 252, 251, 0.35);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-grid-lines {
@@ -96,8 +104,9 @@ main {
     rgba(32, 33, 38, 0.08) calc(20% - 1px),
     rgba(32, 33, 38, 0.08) 20%
   );
-  opacity: 0.45;
+  opacity: 0.2;
   pointer-events: none;
+  z-index: 0;
 }
 
 .hero-content {
@@ -114,7 +123,7 @@ main {
   width: clamp(260px, 42vw, 500px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: var(--hero-circle);
+  background: rgba(236, 236, 232, 0.7);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -48%);
