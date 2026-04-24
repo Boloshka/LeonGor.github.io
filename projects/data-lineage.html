@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Critical Data Lineage for System Migration | Leon Gor</title>
+    <title>Critical Data Lineage for Teller System Migration | Leon Gor</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="project-page">
@@ -17,37 +17,82 @@
 
     <main class="project-page-main">
       <section class="section">
-        <h1>Critical Data Lineage for System Migration</h1>
+        <h1>Critical Data Lineage for Teller System Migration</h1>
         <p class="subtitle">
-          Creating end-to-end visibility of critical data movement to de-risk a
-          complex system migration.
+          Enabled safe migration of a legacy teller system by uncovering hidden
+          data dependencies and reconstructing data flows across the bank.
         </p>
 
-        <h2>Problem</h2>
+        <h2>The Problem</h2>
         <p>
-          Migration planning lacked clear traceability across upstream and
-          downstream systems, making it difficult to estimate breakpoints,
-          reconcile ownership, and sequence releases safely.
+          National Australia Bank relied on a legacy teller system (eBOBS) that
+          had been in operation for decades.
+        </p>
+        <p>
+          Transaction data flowed through a mainframe process into the Global
+          Data Warehouse, supporting critical reporting across compliance,
+          financial crime and branch operations.
+        </p>
+        <p>
+          Over time, many undocumented users and dependencies had built up
+          around this data, with limited visibility into how it was used.
+        </p>
+        <p>
+          When the bank decided to replace the system with a modern
+          microservices platform, this lack of clarity created a major risk:
+          critical dashboards and reporting processes could break during
+          migration.
         </p>
 
         <h2>What I Did</h2>
         <p>
-          I mapped critical entities across source systems, transformation logic,
-          and consuming applications, then built lineage documentation and
-          validation checkpoints that product and engineering teams could use.
+          I established visibility of how data flowed from the legacy system
+          into the warehouse and how it was used across the organisation.
         </p>
+        <ul>
+          <li>Identified and engaged previously unknown downstream users</li>
+          <li>Reverse-engineered data flows using SQL and system tracing</li>
+          <li>
+            Mapped key fields and their usage across reporting and operational
+            processes
+          </li>
+          <li>
+            Defined the data requirements needed for the new system to replicate
+            legacy outputs
+          </li>
+        </ul>
 
         <h2>Key Insight</h2>
         <p>
-          Most migration risk sat not in primary tables but in low-visibility
-          dependencies embedded in reporting extracts and manual handoff steps.
+          The biggest risk was not the migration itself, but hidden dependencies
+          across the organisation.
+        </p>
+        <p>
+          Many critical processes relied on specific fields and transformations
+          that were not documented. Without uncovering these dependencies, the
+          migration could silently break important reporting.
         </p>
 
         <h2>Impact</h2>
-        <p>
-          The program gained clearer cutover sequencing, stronger controls for
-          data integrity, and fewer late-stage surprises during migration waves.
-        </p>
+        <ul>
+          <li>Enabled a safe and controlled migration approach</li>
+          <li>Ensured continuity of critical dashboards and reporting</li>
+          <li>Reduced risk of compliance and operational issues</li>
+          <li>
+            Provided clarity for engineering and business teams to proceed with
+            confidence
+          </li>
+        </ul>
+
+        <h2>Stakeholder Outcome</h2>
+        <ul>
+          <li>Gave stakeholders visibility into previously unclear data usage</li>
+          <li>
+            Supported coordination between business, engineering and platform
+            teams
+          </li>
+          <li>Became a key input into migration planning</li>
+        </ul>
       </section>
     </main>
   </body>
