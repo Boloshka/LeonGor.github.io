@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Critical Data Lineage for Teller System Migration | Leon Gor</title>
+    <title>Critical Data Lineage for Legacy System Migration | Leon Gor</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="project-page">
@@ -17,60 +17,42 @@
 
     <main class="project-page-main">
       <section class="section">
-        <h1>Critical Data Lineage for Teller System Migration</h1>
+        <h1>Critical Data Lineage for Legacy System Migration</h1>
         <p class="subtitle">
-          Enabled safe migration of a legacy teller system by uncovering hidden
-          data dependencies and reconstructing data flows across the bank.
+          Enabled safe migration of a legacy transaction system by uncovering hidden data dependencies and reconstructing data flows across the organisation.
         </p>
 
         <h2>The Problem</h2>
         <p>
-          National Australia Bank relied on a legacy teller system (eBOBS) that
-          had been in operation for decades.
+          A large financial institution relied on a legacy teller transaction system that had been in operation for decades.
         </p>
         <p>
-          Transaction data flowed through a mainframe process into the Global
-          Data Warehouse, supporting critical reporting across compliance,
-          financial crime and branch operations.
+          Transaction data flowed through a mainframe process into a central data warehouse, supporting critical reporting across compliance, financial crime and branch operations.
         </p>
         <p>
-          Over time, many undocumented users and dependencies had built up
-          around this data, with limited visibility into how it was used.
+          Over time, many undocumented users and dependencies had built up around this data, with limited visibility into how it was used.
         </p>
         <p>
-          When the bank decided to replace the system with a modern
-          microservices platform, this lack of clarity created a major risk:
-          critical dashboards and reporting processes could break during
-          migration.
+          When the organisation decided to replace the system with a modern microservices-based platform, this lack of clarity created a major risk: critical dashboards and reporting processes could break during migration.
         </p>
 
         <h2>What I Did</h2>
         <p>
-          I established visibility of how data flowed from the legacy system
-          into the warehouse and how it was used across the organisation.
+          I established visibility of how data flowed from the legacy system into the warehouse and how it was used across the organisation.
         </p>
         <ul>
           <li>Identified and engaged previously unknown downstream users</li>
           <li>Reverse-engineered data flows using SQL and system tracing</li>
-          <li>
-            Mapped key fields and their usage across reporting and operational
-            processes
-          </li>
-          <li>
-            Defined the data requirements needed for the new system to replicate
-            legacy outputs
-          </li>
+          <li>Mapped key fields and their usage across reporting and operational processes</li>
+          <li>Defined the data requirements needed for the new system to replicate legacy outputs</li>
         </ul>
 
         <h2>Key Insight</h2>
         <p>
-          The biggest risk was not the migration itself, but hidden dependencies
-          across the organisation.
+          The biggest risk was not the migration itself, but hidden dependencies across the organisation.
         </p>
         <p>
-          Many critical processes relied on specific fields and transformations
-          that were not documented. Without uncovering these dependencies, the
-          migration could silently break important reporting.
+          Many critical processes relied on specific fields and transformations that were not documented. Without uncovering these dependencies, the migration could silently break important reporting.
         </p>
 
         <h2>Impact</h2>
@@ -78,19 +60,13 @@
           <li>Enabled a safe and controlled migration approach</li>
           <li>Ensured continuity of critical dashboards and reporting</li>
           <li>Reduced risk of compliance and operational issues</li>
-          <li>
-            Provided clarity for engineering and business teams to proceed with
-            confidence
-          </li>
+          <li>Provided clarity for engineering and business teams to proceed with confidence</li>
         </ul>
 
         <h2>Stakeholder Outcome</h2>
         <ul>
           <li>Gave stakeholders visibility into previously unclear data usage</li>
-          <li>
-            Supported coordination between business, engineering and platform
-            teams
-          </li>
+          <li>Supported coordination between business, engineering and platform teams</li>
           <li>Became a key input into migration planning</li>
         </ul>
       </section>
