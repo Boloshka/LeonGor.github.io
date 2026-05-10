@@ -142,23 +142,24 @@ h1 {
   font-weight: 500;
 }
 
-.hero-problem-headline {
-  max-width: 760px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.7rem;
+.hero-problem-cards {
+  max-width: 640px;
+  margin: 0.45rem auto 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
 }
 
-.problem-pill {
+.problem-card {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border);
-  background: rgba(253, 253, 252, 0.86);
-  padding: 0.4rem 0.75rem;
-  font-size: 0.9em;
-  line-height: 1.2;
+  background: rgba(253, 253, 252, 0.82);
+  padding: 0.45rem 0.65rem;
+  font-size: 0.84rem;
+  line-height: 1.25;
+  color: #2b2d35;
 }
 
 .sr-only {
@@ -380,6 +381,11 @@ h2 {
 
   .hero-content::before {
     width: clamp(210px, 70vw, 340px);
+  }
+
+  .hero-problem-cards {
+    grid-template-columns: 1fr;
+    max-width: 340px;
   }
 
   .hero-side-note {
