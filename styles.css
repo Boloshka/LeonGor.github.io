@@ -63,7 +63,7 @@ main {
 }
 
 .section {
-  padding: 3.5rem 0;
+  padding: 4.75rem 0;
 }
 
 .hero {
@@ -107,8 +107,8 @@ main {
 .hero-content {
   position: relative;
   z-index: 1;
-  width: min(820px, 100%);
-  padding: 7.5rem 2rem;
+  width: min(760px, 100%);
+  padding: 8.5rem 2rem;
   text-align: center;
 }
 
@@ -134,11 +134,11 @@ main {
 }
 
 h1 {
-  margin: 0.5rem auto 1rem;
-  max-width: 11ch;
+  margin: 0.6rem auto 1.35rem;
+  max-width: 14ch;
   font-family: var(--serif);
-  font-size: clamp(2.45rem, 8vw, 6.25rem);
-  line-height: 0.95;
+  font-size: clamp(1.35rem, 4vw, 3.15rem);
+  line-height: 1.15;
   letter-spacing: 0.02em;
   font-weight: 500;
 }
@@ -151,11 +151,12 @@ h1 {
 }
 
 .intro {
-  max-width: 440px;
+  max-width: 520px;
   margin: 0;
   margin-inline: auto;
   color: #34363f;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
 }
 
 .hero-side-note {
@@ -206,7 +207,7 @@ h2 {
 
 
 .project-group {
-  margin-top: 1.6rem;
+  margin-top: 2.3rem;
 }
 
 .project-group-title {
@@ -222,8 +223,26 @@ h2 {
 .card {
   border: 1px solid var(--border);
   border-radius: 0;
-  padding: 1.5rem;
+  padding: 1.6rem;
   background: rgba(253, 253, 252, 0.86);
+}
+
+.problem-cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.8rem;
+}
+
+.problem-card {
+  border: 1px solid var(--border);
+  background: rgba(253, 253, 252, 0.8);
+  padding: 0.85rem 0.95rem;
+  font-size: 0.9rem;
+  color: #3b3d45;
+  line-height: 1.55;
 }
 
 .card h3 {
