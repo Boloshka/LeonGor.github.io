@@ -134,13 +134,43 @@ main {
 }
 
 h1 {
-  margin: 0.5rem auto 1rem;
-  max-width: 11ch;
+  margin: 0.5rem auto 1.25rem;
   font-family: var(--serif);
-  font-size: clamp(2.45rem, 8vw, 6.25rem);
-  line-height: 0.95;
-  letter-spacing: 0.02em;
+  font-size: clamp(2rem, 6.5vw, 4.9rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
   font-weight: 500;
+}
+
+.hero-problem-headline {
+  max-width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.problem-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: rgba(253, 253, 252, 0.86);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .subtitle {
